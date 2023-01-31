@@ -208,18 +208,18 @@ class _VideoCallState extends State<VideoCall> {
             fillColor: Colors.white,
             padding: const EdgeInsets.all(12.0),
           ),
-          RawMaterialButton(
-            onPressed: _onScreenShare,
-            child: Icon(
-              Icons.share_sharp,
-              color: Colors.blueAccent,
-              size: 20.0,
-            ),
-            shape: CircleBorder(),
-            elevation: 2.0,
-            fillColor: Colors.white,
-            padding: const EdgeInsets.all(12.0),
-          )
+          // RawMaterialButton(
+          //   onPressed: _onScreenShare,
+          //   child: Icon(
+          //     Icons.share_sharp,
+          //     color: Colors.blueAccent,
+          //     size: 20.0,
+          //   ),
+          //   shape: CircleBorder(),
+          //   elevation: 2.0,
+          //   fillColor: Colors.white,
+          //   padding: const EdgeInsets.all(12.0),
+          // )
         ],
       ),
     );
@@ -289,9 +289,9 @@ class _VideoCallState extends State<VideoCall> {
   void _onSwitchCamera() {
     _engine!.switchCamera();
   }
-void _onScreenShare() {
-    _engine!.startScreenCapture(0, 10);
-  }
+// void _onScreenShare() {
+//     _engine!.startScreenCapture(0, 10);
+//   }
 
   @override
   Widget build(BuildContext context) {
